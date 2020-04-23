@@ -7,8 +7,14 @@ const tweets = require('./routes/api/tweets');
 const bodyParser = require('body-parser');
 
 
+mongoose
+  .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => console.log('Connected to MongoDB successfully'))
+  .catch(error => console.log(error));
+
 app.get('/', (req, res) => {
-  console.log(res);
+  debugger; 
+  // console.log(res);
   res.send('Hello World!');
 }); 
 app.use('/api/users', users);
@@ -20,8 +26,5 @@ const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 
 
-mongoose 
-  .connect(db, { useNewUrlParser: true })
-  .then(() => console.log('Connected to MongoDB successfully'))
-  .catch(error => console.log(error));
+
 
