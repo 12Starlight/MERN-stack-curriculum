@@ -13,7 +13,7 @@ mongoose
   .catch(error => console.log(error));
 
 app.get('/', (req, res) => {
-  debugger; 
+  // debugger; 
   // console.log(res);
   res.send('Hello World!');
 }); 
