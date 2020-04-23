@@ -2,6 +2,7 @@
 /.bundle
 /bundle.js.map
 /bundle.js
+/config/keys.js
 
 # Ignore all logfiles and tempfiles.
 /log/*
