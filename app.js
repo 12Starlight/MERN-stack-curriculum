@@ -17,6 +17,9 @@ app.get('/', (req, res) => {
   // console.log(res);
   res.send('Hello World!');
 }); 
+
+
+// Express Router 
 app.use('/api/users', users);
 app.use('/api/tweets', tweets);
 app.use(bodyParser.urlencoded({ extended: false}));
