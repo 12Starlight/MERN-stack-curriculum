@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Schema = mongooese.Schema;
+const Schema = mongoose.Schema;
 
 
 const TweetSchema = new Schema({
