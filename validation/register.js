@@ -13,7 +13,7 @@ module.exports = function validateRegisterInput(data) {
     errors.handle = 'Handle must be between 2 and 30 characters';
   }
 
-  if (Validator.isEmpty(data.handle)) {
+  if (Validator.isEmpty(data.handle)) { 
     errors.handle = 'Handle field is required';
   }
 
