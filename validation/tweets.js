@@ -11,7 +11,7 @@ module.exports = function validateTweetInput(data) {
     errors.text = 'Tweet must be between 5 and 140 chars'
   }
 
-  if (!Validator.isEmpty(data.text)) {
+  if (Validator.isEmpty(data.text)) {
     errors.text = 'Text field is required'
   }
 
