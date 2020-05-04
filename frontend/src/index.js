@@ -17,6 +17,7 @@ import { setAuthToken } from './util/session_api_util';
 // We have not created this action yet, but we will do so in the next step
 import { logout } from './actions/session_actions';
 
+import axios from 'axios';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store; 
@@ -43,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       store.dispatch(logout()); 
       window.location.href = '/login';
     }
-  } else {
+  } else { 
     // If this is a first time user, start with an empty store
     store = configureStore({});
   }
@@ -52,3 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ReactDOM.render(<Root store={store} />, root);
 });
+
+
+window.axios = axios; 
