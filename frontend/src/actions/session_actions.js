@@ -70,5 +70,5 @@ export const logout = () => dispatch => {
   APIUtil.setAuthToken(false)
   // Dispatch a logout action
   dispatch(logoutUser())
-};
+}; 
 
