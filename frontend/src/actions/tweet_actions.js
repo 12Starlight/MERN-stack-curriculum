@@ -38,7 +38,8 @@ export const fetchUserTweets = (id) => (dispatch) => (
 
 export const composeTweet = (data) => (dispatch) => (
   writeTweet(data)
-    .then(tweet => dispatch(receiveNewTweet(tweet)))
+    .then(tweet => 
+dispatch(receiveNewTweet(tweet)))
     .catch(err => console.log(err))
 );
 

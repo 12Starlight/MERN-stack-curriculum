@@ -24,6 +24,7 @@ class Profile extends React.Component {
 
 
   render() {
+    debugger; 
     if (this.state.tweets.length === 0) {
       return (<div>This usesr has no Tweets</div>)
     } else {

@@ -4,7 +4,7 @@ import Tweets from './tweets';
 
 
 const mapStateToProps = (state) => {
-  debugger; 
+  // debugger; 
   return {
     tweets: Object.values(state.tweets.all)
   };
