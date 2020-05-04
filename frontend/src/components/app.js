@@ -4,7 +4,7 @@ import { AuthRoute, ProtectedRoute } from '../util/route_util';
 import { Switch } from 'react-router-dom';
 
 // Import Local Directory Files
-import NavBarContainer from './nav/navbar_container';
+import NavBarContainer from './nav/nav_container';
 
 // Auth Routes
 import MainPage from './main/main_page';
