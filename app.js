@@ -5,7 +5,8 @@ const passport = require('passport');
 // require('./config/passport')(passport);
 const path = require('path');
 
-const db = require('./config/keys').mongoURI; 
+// const db = require('./config/keys').mongoURI; 
+const db = ENV[mongoURI]
 const users = require('./routes/api/users');
 const tweets = require('./routes/api/tweets');
 const User = require('./models/User');
