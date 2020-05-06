@@ -6,7 +6,7 @@ const passport = require('passport');
 const path = require('path');
 
 // const db = require('./config/keys').mongoURI; 
-const db = process.env.mongoURI
+const db = process.env.MONGO_URI
 const users = require('./routes/api/users');
 const tweets = require('./routes/api/tweets');
 const User = require('./models/User');
