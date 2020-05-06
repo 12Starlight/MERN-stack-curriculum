@@ -21,18 +21,6 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// app.get('/', (req, res) => {
-//   // debugger; 
-//   // console.log(res);
-//   const user = new User({
-//     handle: 'jim',
-//     email: 'jim@gmail.com',
-//     password: '123456'
-//   })
-//   user.save();
-//   res.send('Hello World!');
-// }); 
-
 
 // Express Router 
 app.use('/api/users', users);
@@ -49,7 +37,20 @@ if (process.env.NODE_ENV === 'production') {
   app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'frontend', 'build', 'index.html'));
   })
+} else {
+  app.get('/', (req, res) => {
+    // debugger; 
+    // console.log(res);
+    const user = new User({
+      handle: 'jim',
+      email: 'jim@gmail.com',
+      password: '123456'
+    })
+    user.save();
+    res.send('Hello World!');
+  }); 
 }
+
 
 
 
