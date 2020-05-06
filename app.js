@@ -21,17 +21,17 @@ mongoose
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', (req, res) => {
-  // debugger; 
-  // console.log(res);
-  const user = new User({
-    handle: 'jim',
-    email: 'jim@gmail.com',
-    password: '123456'
-  })
-  user.save();
-  res.send('Hello World!');
-}); 
+// app.get('/', (req, res) => {
+//   // debugger; 
+//   // console.log(res);
+//   const user = new User({
+//     handle: 'jim',
+//     email: 'jim@gmail.com',
+//     password: '123456'
+//   })
+//   user.save();
+//   res.send('Hello World!');
+// }); 
 
 
 // Express Router 
